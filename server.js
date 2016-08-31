@@ -25,6 +25,7 @@ app.use(
         user     : 'root',
         password : '',
         database : 'test',
+        port     : '3306',
         debug    : false //set true if you wanna see debug logger
     },'request')
 
