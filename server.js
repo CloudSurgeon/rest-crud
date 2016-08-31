@@ -82,7 +82,7 @@ curut.post(function(req,res,next){
     //validation
     req.assert('name','Name is required').notEmpty();
     req.assert('email','A valid email is required').isEmail();
-    req.assert('password','Enter a password 6 - 20').len(6,20);
+    req.assert('medical_id','Enter a medical id 6 - 20 characters').len(6,20);
 
     var errors = req.validationErrors();
     if(errors){
@@ -94,7 +94,7 @@ curut.post(function(req,res,next){
     var data = {
         name:req.body.name,
         email:req.body.email,
-        password:req.body.password
+        medical_id:req.body.medical_id
      };
 
     //inserting into mysql
@@ -168,7 +168,7 @@ curut2.put(function(req,res,next){
     //validation
     req.assert('name','Name is required').notEmpty();
     req.assert('email','A valid email is required').isEmail();
-    req.assert('password','Enter a password 6 - 20').len(6,20);
+    req.assert('medical_id','Enter a medical id 6 - 20 characters').len(6,20);
 
     var errors = req.validationErrors();
     if(errors){
@@ -180,7 +180,7 @@ curut2.put(function(req,res,next){
     var data = {
         name:req.body.name,
         email:req.body.email,
-        password:req.body.password
+        medical_id:req.body.medical_id
      };
 
     //inserting into mysql

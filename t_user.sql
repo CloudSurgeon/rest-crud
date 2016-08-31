@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `t_user` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL,
+  `medical_id` varchar(100) NOT NULL,
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `t_user` (
 -- Dumping data for table `t_user`
 --
 
-INSERT INTO `t_user` (`user_id`, `name`, `email`, `password`) VALUES
+INSERT INTO `t_user` (`user_id`, `name`, `email`, `medical_id`) VALUES
 (1, 'Mas Banyar', 'banyar@yahoo.com', '23235645yghgf'),
 (2, 'Mas Mapmup', 'mapmup@gmail.com', 'dncskdcndscsdcdsc'),
 (4, 'Boronong', 'borononn@yahoo.com', '032bcsjdncsdjc3223'),
