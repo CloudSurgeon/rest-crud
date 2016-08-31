@@ -11,6 +11,8 @@
     "express-myconnection": "*",
     "express-validator": "^2.6.0",
     "mysql": "*",
-    "pg": "*"
+    "pg": "*",
+    "forever": "*",
+    "forever-service": "*"
   }
 }
