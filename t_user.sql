@@ -42,7 +42,7 @@ INSERT INTO `t_user` (`user_id`, `name`, `email`, `medical_id`) VALUES
 (1, 'Mas Banyar', 'banyar@yahoo.com', '23235645yghgf'),
 (2, 'Mas Mapmup', 'mapmup@gmail.com', 'dncskdcndscsdcdsc'),
 (4, 'Boronong', 'borononn@yahoo.com', '032bcsjdncsdjc3223'),
-(5, 'Nadya Ek', 'nadya@yahoo.com', 'bonbon032932');
+(5, 'Nadya Ek', 'nadya@yahoo.com', 'bonbon032932') ON DUPLICATE KEY UPDATE user_id = user_id;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
